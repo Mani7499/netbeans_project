@@ -16,7 +16,7 @@ import java.awt.event.*;
  * @author wikipc
  */
 public class Signup extends javax.swing.JFrame {
-     RadioListener myListener =null;
+  //   RadioListener myListener =null;
      String check = "customer";
 
     /**
