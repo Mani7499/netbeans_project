@@ -10,6 +10,7 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import javax.swing.*;
 import java.awt.event.*;
+import static java.time.Clock.system;
 
 /**
  *
@@ -224,6 +225,7 @@ public class Signup extends javax.swing.JFrame {
        if(butt.equals("Submit")){
           try {
                Class.forName("com.mysql.cj.jdbc.Driver");
+               System.out.println("database connected");
             Connection conn=(Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/bazaar","root","mani7499@#");
             String s = "INSERT INTO signup(name,password,mobile_no,email,user_type)" + "VALUES (?,?,?,?,?)";
   
